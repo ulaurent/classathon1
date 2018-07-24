@@ -3,7 +3,7 @@
 #include <cs50.h>
 #include <stdlib.h>
 
-int main (int argc, char *argv[]){
+int sumFibs (int argc, char *argv[]){
     if (argc != 2){
         printf("error");
     }
@@ -22,6 +22,6 @@ int main (int argc, char *argv[]){
          first = second - first;
     }
 
-    printf("result: %i", result);
+    return result;
 
 }

@@ -3,7 +3,7 @@
 #include <cs50.h>
 #include <stdlib.h>
 
-int main (int argc, char *argv[]){
+int factorialize (int argc, char *argv[]){
     if (argc != 2){
         printf("error");
     }
@@ -19,6 +19,6 @@ int main (int argc, char *argv[]){
     long long  fix = (long long) factor;
 
 
-   printf ("factorial: %lli\n", fix);
+   return fix;
 
 }
