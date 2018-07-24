@@ -22,6 +22,6 @@ int sumFibs (int argc, char *argv[]){
          first = second - first;
     }
 
-    return result;
+     printf("result: %i", result);
 
 }

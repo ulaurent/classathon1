@@ -19,6 +19,6 @@ int factorialize (int argc, char *argv[]){
     long long  fix = (long long) factor;
 
 
-   return fix;
+  printf ("factorial: %lli\n", fix);
 
 }
