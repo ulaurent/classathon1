@@ -3,6 +3,9 @@
 #include <time.h>
 #include <assert.h>
 
+
+// Sub- prime prelim solution with new consepts introduced
+
 bool isPrime(int);
 int sumPrimes (int);
 bool testPrimes()
