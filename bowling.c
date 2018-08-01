@@ -10,32 +10,28 @@ int main (int argc, char *argv[]){
     }
 
     int total = 0;
+    int MAXFRAMELENGTH = 19;
 
-    // int score = [ ];
-    // score = get_string("What is your score array: ");
-    // printf("your score array is %s\n", score);
-
-    for (int i=1 ; i < 7; i += 2){
+    for (int i=1 ; i <= MAXFRAMELENGTH; i += 2){
 
     int firstScore = atoi(argv[i]);
     int secondScore = atoi(argv[i+1]);
-    int thirdScore = atoi(argv[i+2]);
-    int fourthScore = atoi(argv[i+3]);
+    //int thirdScore = atoi(argv[i+2]);
+    //int fourthScore = atoi(argv[i+3]);
 
     if((firstScore + secondScore) < 10){
              total += (firstScore + secondScore);
          }
     else if (firstScore == 10){
-        total += (firstScore + secondScore + thirdScore + fourthScore);
+        total += (firstScore + secondScore + atoi(argv[i+2]) + atoi(argv[i+3]));
     }
 
     else if ((firstScore + secondScore) == 10){
-        total += (firstScore + secondScore + thirdScore);
+        total += (firstScore + secondScore + atoi(argv[i+2]));
     }
 
     }
 
-    printf("your total %i\n", total);
-
+    printf("your total score: %i\n", total);
 
 }
